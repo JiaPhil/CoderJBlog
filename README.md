@@ -25,5 +25,9 @@ npm dev
 
 # 打包
 npm build
+
+# 更新
+git subtree push --prefix dist origin gh-pages
 ```
+
 
