@@ -12,7 +12,7 @@ hero:
   actions:
     - theme: brand
       text: 🚀 Get Started
-      link: /web/hello
+      link: /HTML/邂逅前端开发
     - theme: alt
       text: View on GitHub
       link: https://gitee.com/jiahao12/jiahao12
