@@ -11,6 +11,8 @@ import { sidebar } from './utils/sidebar'
 const config = defineConfig({
   title: 'CoderJ',
   titleTemplate: 'CoderJ',
+  base:'./',
+  outDir:'../dist',
   head: [
     ['link', { rel: 'icon', href: '/images/iconfont.png', crossorigin: '' }]
   ],
