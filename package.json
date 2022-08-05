@@ -1,0 +1,14 @@
+{
+  "name": "blog",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "serve": "vitepress serve docs"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "fighting-design": "0.3.2-bate.5",
+    "vitepress": "^1.0.0-alpha.4",
+    "vue": "^3.2.33"
+  }
+}
