@@ -10,12 +10,24 @@ export const sidebar = {
           link: '/HTML/邂逅前端开发'
         },
         {
-          text: '🟧HTML',
-          link: '/HTML/HTML'
+          text: '🟧HTML结构',
+          link: '/HTML/HTML结构'
+        },
+        {
+          text: '🟧HTML元素',
+          link: '/HTML/HTML元素'
+        },
+        {
+          text: '🟧HTML全局属性',
+          link: '/HTML/HTML全局属性'
+        },
+        {
+          text: '🟧补充知识',
+          link: '/HTML/补充知识'
         }
       ]
     },
-
+    
   ],
   '/JavaScript/': [
     {
