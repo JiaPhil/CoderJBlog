@@ -4,7 +4,7 @@ export const nav = [
     items: [
       { text: '💻邂逅前端开发', link: '../../HTML/邂逅前端开发' },
       { text: '🟧HTML', link: '../../HTML/HTML结构' },
-      { text: "🟥CSS", link: "../../CSS/CSS" },
+      { text: "🟥CSS", link: "../../CSS/认识CSS" },
       { text: "🟨JavaScript", link: "../../JavaScript/函数式编程" },
       // { text: "🟦 TypeScript", link: "../FrontEnd/TypeScript/TypeScript" },
       // { text: "🟩 Vue", link: "../FrontEnd/Vue/Vue" },

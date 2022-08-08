@@ -21,13 +21,27 @@ export const sidebar = {
           text: '🟧HTML全局属性',
           link: '/HTML/HTML全局属性'
         },
+
+      ]
+    },
+    {
+      title: "🟧其他",
+      items: [
         {
           text: '🟧补充知识',
           link: '/HTML/补充知识'
         }
       ]
-    },
-    
+    }
+  ],
+  '/CSS/': [
+    {
+      text: '🟥CSS',
+      collapsible: true,
+      items: [
+        { text: '🟥认识CSS', link: '/CSS/认识CSS' }
+      ]
+    }
   ],
   '/JavaScript/': [
     {
