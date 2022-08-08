@@ -7,7 +7,7 @@
     <meta name="description" content="A VitePress site">
     <link rel="stylesheet" href="/CoderJBlog/assets/style.1433e897.css">
     <link rel="modulepreload" href="/CoderJBlog/assets/app.59925892.js">
-    <link rel="modulepreload" href="/CoderJBlog/assets/CSS_认识CSS.md.2e63c70d.lean.js">
+    <link rel="modulepreload" href="/CoderJBlog/assets/CSS_认识CSS.md.84c918dd.lean.js">
     
     <link rel="icon" href="/images/iconfont.png" crossorigin="">
   <script>(()=>{const e=localStorage.getItem("vitepress-theme-appearance"),a=window.matchMedia("(prefers-color-scheme: dark)").matches;(!e||e==="auto"?a:e==="dark")&&document.documentElement.classList.add("dark")})();</script>
@@ -17,13 +17,14 @@
 <span class="line"><span style="color:#A6ACCD;">2. 1994年，提出css概念，1996年发布CSS1</span></span>
 <span class="line"><span style="color:#A6ACCD;">3. 1996年W3C正式成立CSS工作研究小组，并于1998年发布CSS2</span></span>
 <span class="line"><span style="color:#A6ACCD;">4. 2011年发布CSS3，CSS3开始分“模块”发布</span></span>
-<span class="line"></span></code></pre></div><h2 id="css呈现形式" tabindex="-1">CSS呈现形式 <a class="header-anchor" href="#css呈现形式" aria-hidden="true">#</a></h2><ul><li>外部样式表（link）</li><li>内部样式表（style）</li><li>内联样式（style）</li></ul><h2 id="css是如何工作的" tabindex="-1">CSS是如何工作的 <a class="header-anchor" href="#css是如何工作的" aria-hidden="true">#</a></h2><div class="language-tex"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">1. 浏览器加载HTML</span></span>
-<span class="line"><span style="color:#A6ACCD;">2. 将HTML文件转换成一个DOM</span></span>
-<span class="line"><span style="color:#A6ACCD;">3. 接下来浏览器会载入该HTML相关的大部分资源，比如嵌入页面的图片、视频和CSS样式</span></span>
-<span class="line"><span style="color:#A6ACCD;">4. 浏览器拉取到CSS文件后会解析，根据选择器的不同（比如 element、class、id 等等）把他们放入不同的“桶”中</span></span>
-<span class="line"><span style="color:#A6ACCD;">5. 浏览器基于它找到的不同的选择器，将不同的规则（基于选择器的规则，如元素选择器、类选择器、id 选择器等）应用在对应的DOM节点中，并添加节点依赖的样式（这个过程叫做渲染树）</span></span>
-<span class="line"></span></code></pre></div><p><img src="/CoderJBlog/assets/rendering.f1edb571.svg" alt="CSS工作流程"></p><hr><h3 id="" tabindex="-1"><a class="header-anchor" href="#" aria-hidden="true">#</a></h3><ul><li><p><a href="https://www.w3.org/TR/?tag=css" target="_blank" rel="noopener noreferrer">CSS官方文档地址</a></p></li><li><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/" target="_blank" rel="noopener noreferrer">CSS推荐文档地址</a></p></li><li><p><a href="https://caniuse.com/" target="_blank" rel="noopener noreferrer">由于浏览器版本、CSS版本等问题，查询某些CSS是否可用</a></p></li></ul></div></div></main><footer class="VPDocFooter" data-v-79ca2460 data-v-04568844><div class="edit-info" data-v-04568844><!----><!----></div><!----></footer><!--[--><!--]--></div></div></div></div></div><!----><!--[--><!--]--></div></div>
-    <script>__VP_HASH_MAP__ = JSON.parse("{\"css_认识css.md\":\"2e63c70d\",\"html_html元素.md\":\"fa97e588\",\"html_html全局属性.md\":\"177a6887\",\"html_html结构.md\":\"2158d75b\",\"html_补充知识.md\":\"475cd459\",\"html_邂逅前端开发.md\":\"d259deef\",\"javascript_javascript的类.md\":\"b1f62732\",\"javascript_javascript递归.md\":\"6fb48f0b\",\"javascript_函数式编程.md\":\"e6da3deb\",\"index.md\":\"bd5f15ef\"}")</script>
+<span class="line"></span></code></pre></div><h2 id="css呈现形式" tabindex="-1">CSS呈现形式 <a class="header-anchor" href="#css呈现形式" aria-hidden="true">#</a></h2><ul><li>外部样式表 <ul><li>link: rel(stylesheet、icon、dns-prefetch)</li><li>@import</li></ul></li><li>内部样式表（style）</li><li>内联样式（style）</li></ul><h2 id="css是如何工作的" tabindex="-1">CSS是如何工作的 <a class="header-anchor" href="#css是如何工作的" aria-hidden="true">#</a></h2><div class="language-tex"><span class="copy"></span><pre><code><span class="line"><span style="color:#A6ACCD;">1. 浏览器加载HTML</span></span>
+<span class="line"><span style="color:#A6ACCD;">2. 将HTML文件解析成一个DOM树</span></span>
+<span class="line"><span style="color:#676E95;font-style:italic;">% 3. 接下来浏览器会载入该HTML相关的大部分资源，比如嵌入页面的图片、视频和CSS样式（与上步同时进行）</span></span>
+<span class="line"><span style="color:#A6ACCD;">3. 加载CSS文件</span></span>
+<span class="line"><span style="color:#A6ACCD;">4. 浏览器拉取到CSS文件后会解析，根据选择器的不同（比如 element、class、id 等等）把他们放入不同的“桶”中（等HTML解析结束后进行下一步）</span></span>
+<span class="line"><span style="color:#A6ACCD;">5. 浏览器基于它找到的不同的选择器，将不同的规则（基于选择器的规则，如元素选择器、类选择器、id 选择器等）应用在对应的DOM节点中，并添加节点依赖的样式（这个过程叫做Render Tree渲染树）</span></span>
+<span class="line"></span></code></pre></div><p><img src="/CoderJBlog/assets/rendering.f1edb571.svg" alt="CSS工作流程"></p><h3 id="css颜色表示" tabindex="-1">CSS颜色表示 <a class="header-anchor" href="#css颜色表示" aria-hidden="true">#</a></h3><ul><li>RGB(red,green,black)</li><li>颜色取值范围0~255</li><li>十六进制表示RGB：将RGB三个颜色的值转为16进制</li></ul><hr><h3 id="" tabindex="-1"><a class="header-anchor" href="#" aria-hidden="true">#</a></h3><ul><li><p><a href="https://www.w3.org/TR/?tag=css" target="_blank" rel="noopener noreferrer">CSS官方文档地址</a></p></li><li><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/" target="_blank" rel="noopener noreferrer">CSS推荐文档地址</a></p></li><li><p><a href="https://caniuse.com/" target="_blank" rel="noopener noreferrer">由于浏览器版本、CSS版本等问题，查询某些CSS是否可用</a></p></li></ul></div></div></main><footer class="VPDocFooter" data-v-79ca2460 data-v-04568844><div class="edit-info" data-v-04568844><!----><!----></div><!----></footer><!--[--><!--]--></div></div></div></div></div><!----><!--[--><!--]--></div></div>
+    <script>__VP_HASH_MAP__ = JSON.parse("{\"css_认识css.md\":\"84c918dd\",\"html_html元素.md\":\"fa97e588\",\"html_html全局属性.md\":\"177a6887\",\"html_html结构.md\":\"2158d75b\",\"html_补充知识.md\":\"0b38cf34\",\"html_邂逅前端开发.md\":\"d259deef\",\"javascript_javascript的类.md\":\"b1f62732\",\"javascript_javascript递归.md\":\"6fb48f0b\",\"javascript_函数式编程.md\":\"e6da3deb\",\"index.md\":\"bd5f15ef\"}")</script>
     <script type="module" async src="/CoderJBlog/assets/app.59925892.js"></script>
     
   </body>
