@@ -4,5 +4,6 @@
     "pnpm",
     "tian",
     "vitepress"
-  ]
+  ],
+  "liveServer.settings.port": 5501
 }
