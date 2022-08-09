@@ -39,7 +39,16 @@ export const sidebar = {
       text: '🟥CSS',
       collapsible: true,
       items: [
-        { text: '🟥认识CSS', link: '/CSS/认识CSS' }
+        { text: '🟥认识CSS', link: '/CSS/认识CSS' },
+      ]
+    },
+    {
+      text:'🟥CSS基础',
+      collapsible: true,
+      items:[
+        { text: '🟥CSS文本', link: '/CSS/CSS文本' },
+        {text:'🟥CSS字体',link:'/CSS/CSS字体'},
+        {text:'🟥CSS选择器',link:'CSS/CSS选择器'}
       ]
     }
   ],
