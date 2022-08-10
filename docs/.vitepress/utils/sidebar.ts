@@ -43,12 +43,13 @@ export const sidebar = {
       ]
     },
     {
-      text:'🟥CSS基础',
+      text: '🟥CSS基础',
       collapsible: true,
-      items:[
+      items: [
         { text: '🟥CSS文本', link: '/CSS/CSS文本' },
-        {text:'🟥CSS字体',link:'/CSS/CSS字体'},
-        {text:'🟥CSS选择器',link:'CSS/CSS选择器'}
+        { text: '🟥CSS字体', link: '/CSS/CSS字体' },
+        { text: '🟥CSS选择器', link: '/CSS/CSS选择器' },
+        { text: '🟥CSS层叠与继承', link: '/CSS/CSS继承与层叠' }
       ]
     }
   ],

@@ -39,11 +39,13 @@ font-variant可以影响小写字母的显示形式
 √ 只作用于文本
 line-height上下居中显示原理
 ```tex
+line-height = 字体大小(font-size) + 上行距 + 下行距 (上行距 = 下行距)
 ```
 
 height和line-height的区别
-  √ height: 元素的整体高度
-  √ line-height: 一行文字占据的高度
+  | height     |line-height     |
+  |------------|----------------|
+  |元素的整体高度|一行文字占据的高度|
 
 
 ## font
