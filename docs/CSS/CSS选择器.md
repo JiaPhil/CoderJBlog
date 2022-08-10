@@ -89,7 +89,16 @@ p:first-child {}
 ......
 
 /* 2. 伪元素 -> :: 开头 */
+/* first-line -> 首行文本 */
 p::first-line {}
+/* first-letter -> 首字母 */
+p::first-letter {}
+/* 使用after、before 时content不能省略 */
+/* 默认情况下是行内级元素(inline level) */
+/* before */
+div::before {}
+/* after */
+div::after {}
 ```
 
 
