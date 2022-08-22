@@ -50,7 +50,11 @@ export const sidebar = {
         { text: '🟥CSS字体', link: '/CSS/CSS字体' },
         { text: '🟥CSS选择器', link: '/CSS/CSS选择器' },
         { text: '🟥CSS层叠与继承', link: '/CSS/CSS继承与层叠' },
-        { text: '🟥CSS盒子模型', link: '/CSS/CSS盒子模型' }
+        { text: '🟥CSS盒子模型', link: '/CSS/CSS盒子模型' },
+        { text: '🟥CSS背景设置', link: '/CSS/CSS背景设置' },
+        { text: '🟥CSS结构伪类', link: '/CSS/CSS-结构伪类' },
+        { text: '🟥CSS定位', link: '/CSS/CSS定位' },
+        { text: '🟥CSS补充知识', link: '/CSS/CSS补充知识' },
       ]
     }
   ],
