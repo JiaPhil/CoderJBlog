@@ -21,10 +21,25 @@
 ```
 
 ## 表格元素
-
+caption
+table
+tr
+td
+tbody
+thead
+th
+tfoot
 ## 表格合并
+colspan
+rowspan
 
 ## 表单元素
+input 
+radio
+button
+checkbox
+textarea
+
 
 ## 表单常见元素
 
