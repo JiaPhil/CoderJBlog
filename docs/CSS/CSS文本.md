@@ -36,4 +36,26 @@ text-indent用于设置第一行内容的缩进
 letter-spacing、word-spacing分别用于设置字母、单词之间的间距
 
 
+## 单行省略
+```css
+.text{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+```
+
+## 多行省略
+```css
+.box{
+   display: -webkit-box;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   line-clamp: 2;
+   -webkit-line-clamp: 2;
+   -webkit-box-orient: vertical;
+}
+
+```
+
 
