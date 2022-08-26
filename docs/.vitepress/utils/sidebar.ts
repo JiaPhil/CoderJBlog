@@ -69,6 +69,10 @@ export const sidebar = {
           link: '/JavaScript/函数式编程'
         },
         {
+          text: '🟨异步编程',
+          link: '/JavaScript/异步编程'
+        },
+        {
           text: '🟨class类',
           link: '/JavaScript/JavaScript的类'
         },
