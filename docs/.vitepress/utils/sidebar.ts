@@ -54,6 +54,8 @@ export const sidebar = {
         { text: '🟥CSS背景设置', link: '/CSS/CSS背景设置' },
         { text: '🟥CSS结构伪类', link: '/CSS/CSS-结构伪类' },
         { text: '🟥CSS定位', link: '/CSS/CSS定位' },
+        { text: '🟥CSS浮动', link: '/CSS/float浮动' },
+        { text: '🟥CSS-flex布局', link: '/CSS/flex布局' },
         { text: '🟥CSS补充知识', link: '/CSS/CSS补充知识' },
       ]
     }
