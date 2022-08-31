@@ -75,6 +75,10 @@ export const sidebar = {
           link: '/JavaScript/异步编程'
         },
         {
+          text: '🟨Promise核心逻辑',
+          link: '/JavaScript/Promise核心逻辑'
+        },
+        {
           text: '🟨class类',
           link: '/JavaScript/JavaScript的类'
         },
