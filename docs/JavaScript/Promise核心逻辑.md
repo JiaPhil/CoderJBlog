@@ -22,7 +22,7 @@ const REJECTED = 'rejected'
 class Promise {
   constructor(executor) {
     // 调用类时传递一个执行器
-    executor(resolve, reject);
+    executor(this.resolve, this.reject);
   }
   // 保存状态 默认PENDING
   status = PENDING;
@@ -30,32 +30,45 @@ class Promise {
   value = undefined;
   // 失败状态的原因
   reason = undefined;
+  // 保存成功函数
+  successCallBack = undefined;
+  // 保存失败函数 
+  failCallBack = undefined;
   // resolve 函数更改状态
   resolve = value => {
     // 若状态已被更改 状态不能再更改
-    if(this.status === PENDING) return; 
+    if(this.status !== PENDING) return; 
     // 更改状态为成功
     this.status = FULFILLED;
     // 保存成功之后的值
-    this.value = value 
+    this.value = value
+    // 判断成功函数是否存在 如果存在 调用
+    this.successCallBack && this.successCallBack(value); 
   }
   // reject 函数更改状态为失败
   reject = reason => {
     // 若状态已被更改 状态不能再更改
-    if(this.status === PENDING) return;
+    if(this.status !== PENDING) return;
     // 更改状态为失败
     this.status = REJECTED;
     // 保存失败之后的原因
     this.reason = reason;
+    // 判断失败函数是否存在 如果存在 调用
+    this.failCallBack && this.failCallBack(reason);
   }
 
   // 定义then方法 判断状态 接收两个函数 成功回调 失败回调
-  then(fulfilledCallBack, rejectedCallBack) {
+  then(successCallBack, failCallBack) {
     // 成功回调
     if(this.status === FULFILLED) {
-      fulfilledCallBack(this.value)
+      successCallBack(this.value)
     }else if(this.status === REJECTED) { // 失败回调
-      rejectedCallBack(this.reason)
+      failCallBack(this.reason)
+    }else {
+      // 等待状态 
+      // 将成功、失败回调存储起来，等执行异步代码的时候再调用回调函数
+      this.failCallBack = failCallBack;
+      this.successCallBack = successCallBack;
     }
   }
 }

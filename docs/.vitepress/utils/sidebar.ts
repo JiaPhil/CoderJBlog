@@ -77,15 +77,8 @@ export const sidebar = {
         {
           text: '🟨Promise核心逻辑',
           link: '/JavaScript/Promise核心逻辑'
-        },
-        {
-          text: '🟨class类',
-          link: '/JavaScript/JavaScript的类'
-        },
-        {
-          text: '🟨递归',
-          link: '/JavaScript/JavaScript递归'
         }
+
       ]
     }
   ]
