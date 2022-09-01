@@ -30,6 +30,71 @@ class Promise {
   value = undefined;
   // 失败状态的原因
   reason = undefined;
+ 
+  // resolve 函数更改状态
+  resolve = value => {
+    // 若状态已被更改 状态不能再更改
+    if(this.status !== PENDING) return; 
+    // 更改状态为成功
+    this.status = FULFILLED;
+    // 保存成功之后的值
+    this.value = value
+
+  }
+  // reject 函数更改状态为失败
+  reject = reason => {
+    // 若状态已被更改 状态不能再更改
+    if(this.status !== PENDING) return;
+    // 更改状态为失败
+    this.status = REJECTED;
+    // 保存失败之后的原因
+    this.reason = reason;
+
+  }
+
+  // 定义then方法 判断状态 接收两个函数 成功回调 失败回调
+  then(successCallBack, failCallBack) {
+    // 成功回调
+    if(this.status === FULFILLED) {
+      successCallBack(this.value)
+    }else if(this.status === REJECTED) { // 失败回调
+      failCallBack(this.reason)
+    }
+  }
+}
+
+```
+> 调用
+```js
+const promise = new Promise((resolve, reject) => {
+  resolve("成功")
+  reject("失败")
+})
+
+promise.then(value=>{
+  console.log("成功回调",value)
+},reason=>{
+  console.log("失败回调",reason)
+})
+
+```
+
+### Promise 异步
+```js
+const PENDING = 'pending'
+const FULFILLED = 'fulfilled'
+const REJECTED = 'rejected'
+class Promise {
+  constructor(executor) {
+    // 调用类时传递一个执行器
+    executor(this.resolve, this.reject);
+  }
+  // 保存状态 默认PENDING
+  status = PENDING;
+  // 成功状态的值
+  value = undefined;
+  // 失败状态的原因
+  reason = undefined;
   // 保存成功函数
   successCallBack = undefined;
   // 保存失败函数 
@@ -76,15 +141,18 @@ class Promise {
 ```
 > 调用
 ```js
+                // 1. new 一个Promise对象
 const promise = new Promise((resolve, reject) => {
-  resolve("成功")
-  reject("失败")
+  // 3. 同步代码执行完后 执行异步
+  setTimeout(() => {
+    resolve('success')
+  }, 2000);
 })
 
-promise.then(value=>{
-  console.log("成功回调",value)
-},reason=>{
-  console.log("失败回调",reason)
+// 2. 调用then方法
+promise.then(value => {
+  console.log(value)
+},reason => {
+  console.log(reason)
 })
-
 ```
