@@ -144,3 +144,5 @@
 ![flex-p](/images/flex-p.png)
 
 flex item中添加i元素补充
+
+i元素的个数 = axis 方向总个数 - 2
