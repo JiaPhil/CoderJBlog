@@ -74,10 +74,11 @@ export const sidebar = {
           text: '🟨异步编程',
           link: '/JavaScript/异步编程'
         },
+
         {
-          text: '🟨Promise核心逻辑',
-          link: '/JavaScript/Promise核心逻辑'
-        }
+          text: '🟨Promise源码解析',
+          link: '/JavaScript/Promise源码'
+        },
 
       ]
     }
