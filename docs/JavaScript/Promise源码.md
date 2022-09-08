@@ -98,15 +98,20 @@ class Promise {
    *    4.4 resolvePromise 还要检测 then方法返回的Promise 和 successCallBack failCallBack返回给下一个then方法的Promise 是否为同一个
    *        4.4.1 若是同一个Promise抛出错误
    * 5. 在成功回调和失败回调中做 异常处理
+   * 6. 链式调用时 then不传参数 返回默认回调 value => value
    *    
    */
   then (successCallBack, failCallBack) {
-    let PromiseReturn = new Promise((resolve, reject) => {
+    // 链式调用 then不传参数 返回默认回调
+    successCallBack = typeof successCallBack === 'function' ? successCallBack : value => value; 
+    failCallBack = typeof failCallBack === 'function' ? failCallBack : reason => { throw reason }; 
+
+    const PromiseReturn = new Promise((resolve, reject) => {
       // 统一异常处理逻辑
       const execFun = (fn, val) => {
         try {
           let res = fn(val);
-          resolvePromise(promise, res, resolve, reject);
+          resolvePromise(PromiseReturn, res, resolve, reject);
         } catch (e) {
           reject(e);
         }
