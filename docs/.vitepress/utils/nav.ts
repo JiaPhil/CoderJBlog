@@ -7,7 +7,7 @@ export const nav = [
       { text: "🟥CSS", link: "../../CSS/认识CSS" },
       { text: "🟨JavaScript", link: "../../JavaScript/函数式编程" },
       // { text: "🟦 TypeScript", link: "../FrontEnd/TypeScript/TypeScript" },
-      // { text: "🟩 Vue", link: "../FrontEnd/Vue/Vue" },
+      { text: "🟩 Vue", link: "../../Vue/监听" },
     ]
   },
   {

@@ -65,10 +65,10 @@
    ✓ flex items 与 main start、main end 之间的距离 等于 flex items 之间的距离
 ```
 
-### align-item
+### align-items
 * 决定了flex items在cross axis上的对齐方式
 ```tex
-1. normal：在弹性布局中，效果和stretch一样
+1. normal：在弹性布局中，效果和stretch一样 height为auto情况下会拉伸至父元素的高度
 2. stretch：当 flex items 在 cross axis 方向的 size 为 auto 时，会
 自动拉伸至填充 flex container
 3. flex-start：与 cross start 对齐

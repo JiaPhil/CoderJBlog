@@ -7,7 +7,7 @@ hero:
   # text: Vite & Vue powered static site generator.
   tagline: 🦸 欢迎来到英雄联盟
   image:
-    src: /images/iconfont.png
+    src: /images/one-pice.png
     alt: VitePress
   actions:
     - theme: brand

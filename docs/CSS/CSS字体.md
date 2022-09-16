@@ -37,6 +37,10 @@ font-variant可以影响小写字母的显示形式
 
 ## line-height(重要)
 √ 只作用于文本
+
+√ 对于块级元素，它指定元素**行盒（line boxes）**的最小高度。
+
+√ 对于非替代的 inline 元素，它用于计算行盒（line box）的高度
 line-height上下居中显示原理
 ```tex
 line-height = 字体大小(font-size) + 上行距 + 下行距 (上行距 = 下行距)

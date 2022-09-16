@@ -19,21 +19,6 @@ const FULFILLED = "fulfilled";
 // 失败状态
 const REJECTED = "rejected";
 
-// 存储状态
-const status = PENDING;
-
-// 成功回调参数
-let value = undefined;
-
-// 失败回调参数
-let reason = undefined;
-
-// 存储成功回调
-let successCallBack = [];
-
-// 存储失败回调
-let failCallBack = [];
-
 function resolvePromise (PromiseReturn, x, resolve, reject) {
   // 判断then返回的promise 和 返回给 下一个then的Promise是否为同一个
   if (PromiseReturn === x) throw new TypeError("Chaining cycle detected for promise #<MyPromise>");
@@ -47,6 +32,21 @@ function resolvePromise (PromiseReturn, x, resolve, reject) {
 }
 
 class Promise {
+  // 存储状态
+  const status = PENDING;
+
+  // 成功回调参数
+  let value = undefined;
+
+  // 失败回调参数
+  let reason = undefined;
+
+  // 存储成功回调
+  let successCallBack = [];
+
+  // 存储失败回调
+  let failCallBack = [];
+
   constructor(exector) {
     exector(this.resolve, this.reject)
   }

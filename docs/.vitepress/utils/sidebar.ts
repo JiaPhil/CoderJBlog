@@ -82,5 +82,21 @@ export const sidebar = {
 
       ]
     }
+  ],
+  '/Vue/': [
+    {
+      text: '🟩Vue',
+      collapsible: true,
+      items: [
+        {
+          text: '🟩监听',
+          link: '/Vue/监听'
+        },
+        {
+          text: '🟩监听',
+          link: '/Vue/provide-inject'
+        }
+      ]
+    }
   ]
 }

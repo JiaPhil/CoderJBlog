@@ -50,6 +50,7 @@ border: width style(不能省略) color
 ```tex
 * 针对父子之间的传递
 * 针对父子之间元素紧挨着的情况
+* 若父元素不在标准流中margin-top的传递不生效
 * 生效情况
   * margin-top
   * margin-bottom 在height设置为auto时才会生效
@@ -57,7 +58,7 @@ border: width style(不能省略) color
 * 解决方法
   * 在父子元素之间不设置margin-top/bottom,用padding代替
   * 给父元素设置border
-  * 出发BFC：给父元素设置overflow: auto
+  * 触发BFC：给父元素设置overflow: auto
 ```
 ### margin的折叠
 什么是margin的折叠❓
@@ -83,6 +84,7 @@ border: width style(不能省略) color
 ```
 
 ## 块级元素为什么设置margin:0 auto 会居中
+需要对块级元素设置具体的宽度 才会居中
 对于块级元素: block box width = width + padding + border
 
 🚀 块级元素默认是占据父元素的整行，但给box设置一个固定宽度时，剩余的宽度会优先分配给margin-right
