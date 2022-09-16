@@ -43,6 +43,13 @@ app.provide(/* 注入名 */ 'app', /* 值 */'App-Provide')
 inject<T>(key: InjectionKey<T> | string, default: unknown): T | undefined;
 ```
 
+### 组件中使用
+```js
+// -> 若提供的值为undefined 可提供一个默认值
+inject('message',ref('world'))
+
+```
+
 ## 使用 Symbol 作注入名 (安全注入)
 可以通过 <code style='background: #f1f1f1;color:#33a06f;border-radius:4px;'>InjectionKey</code> 在提供者和注入者之间，同步注入值的类型。
 

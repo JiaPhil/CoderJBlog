@@ -93,7 +93,7 @@ export const sidebar = {
           link: '/Vue/监听'
         },
         {
-          text: '🟩监听',
+          text: '🟩provide-inject',
           link: '/Vue/provide-inject'
         }
       ]
