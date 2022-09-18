@@ -104,3 +104,23 @@ body {
 *  pointer：一只小手，鼠标指针挪动到链接上面默认就是这个样式
 * text：一条竖线，鼠标指针挪动到文本输入框上面默认就是这个样式
 *  none：没有任何指针显示在元素上面
+
+
+## 哪里加box-sizing:border-box
+设置 <code style='background: #f1f1f1;color:#33a06f;border-radius:4px;'>box-sizing:border-box</code> 有一个前提： 明确设置盒子的宽高
+
+- <code style='background: #f1f1f1; color:#33a06f;border-radius:4px;'>width:auto</code> 元素默认是 <code style='background: #f1f1f1;border-radius:4px;'>box-sizing:border-box</code> 
+- 设置flex布局 元素默认是 <code style='background: #f1f1f1;border-radius:4px;'>box-sizing:border-box</code> 
+
+
+## 设置文本省略不生效情况
+<code style='background: #f1f1f1;color:#33a06f;border-radius:4px;'>flex:1</code> 和 <code style='background: #f1f1f1;border-radius:4px;'>white-space:nowrap</code> 冲突 导致设置 <code style='background: #f1f1f1;color:#33a06f;border-radius:4px;'>flex:1</code> 的后代子元素设置文本省略不生效， 但是设置flex:1 本身元素文本省略是生效的
+
+解决办法：
+- 添加固定宽度
+- 设置<code style='background: #f1f1f1;color:#33a06f;border-radius:4px;'>flex:1</code>的元素 添加 <code style='background: #f1f1f1;border-radius:4px;'>overflow:hidden;</code>
+
+
+## a中嵌套div（块级元素）的现象
+- a 中宽度被块级元素穿透
+- 解决方法： a中设置inline-block(不建议这么做)
