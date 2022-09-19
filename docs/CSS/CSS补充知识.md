@@ -124,3 +124,36 @@ body {
 ## a中嵌套div（块级元素）的现象
 - a 中宽度被块级元素穿透
 - 解决方法： a中设置inline-block(不建议这么做)
+
+
+## 元素水平垂直居中方案
+`水平居中`
+```text
+水平居中：
+  1. 行内级元素
+    设置父元素text-align:center
+  2. 块级元素
+    设置块级元素(固定宽度) margin: 0 auto
+  3. position 绝对定位
+    设置绝对定位元素(宽度)
+    left:0; right:0; margin: 0 auto;
+  4. flex 布局
+    设置justfiy-cotent: center;
+  5. transform + position相对定位
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+```
+
+`垂直居中`
+```text
+1. position 绝对定位
+  设置绝对定位元素(固定高度)
+  bottom:0; top:0; margin: auto 0;
+2. flex 布局
+  设置align-items: center;
+3. transform + position相对定位
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+```
