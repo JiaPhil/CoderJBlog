@@ -56,7 +56,13 @@ export const sidebar = {
         { text: '🟥CSS定位', link: '/CSS/CSS定位' },
         { text: '🟥CSS浮动', link: '/CSS/float浮动' },
         { text: '🟥CSS-flex布局', link: '/CSS/flex布局' },
-        { text: '🟥CSS补充知识', link: '/CSS/CSS补充知识' },
+      ]
+    },
+    {
+      text: '🟥CSS补充',
+      link: '/CSS/CSS补充知识',
+      items: [
+        { text: '🟥CSS补充知识', link: '/CSS/CSS补充知识' }
       ]
     }
   ],
@@ -90,11 +96,25 @@ export const sidebar = {
       items: [
         {
           text: '🟩监听',
-          link: '/Vue/监听'
+          link: '/Vue/api/监听'
         },
         {
           text: '🟩provide-inject',
-          link: '/Vue/provide-inject'
+          link: '/Vue/api/provide-inject'
+        },
+        {
+          text: '🟩生命周期',
+          link: '/Vue/api/生命周期'
+        },
+      ]
+    },
+    {
+      text: '🟩Vue组件',
+      collapsible: true,
+      items: [
+        {
+          text: '🟩按钮组事件',
+          link: '/Vue/组件/按钮组事件'
         }
       ]
     }

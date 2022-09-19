@@ -4,7 +4,7 @@
 在通常情况下，父组件向子组件传递数据，会使用 <code style='background: #f1f1f1;color:#33a06f;border-radius:4px;'>props</code> 。想象一下：如果有多层嵌套的组件，形成一颗巨大的组件树，某个更深层次的组件需要获得祖先组件的数据时，只能使用  <code style='background: #f1f1f1;color:#33a06f;border-radius:4px;'>props</code> 来一级一级的向下传递，这样会非常麻烦。
 ![props逐级向下传递](/images/props.png)
 
-<code style='background: #f1f1f1;border-radius:4px;'>provide</code> 和 <code style='background: #f1f1f1;border-radius:4px;'>inject</code> 很好的解决了这种问题，<code style='background: #f1f1f1;border-radius:4px;'>provide</code> 可以直接由父组件提供数据，其后代组件都可以用 <code style='background: #f1f1f1;border-radius:4px;'>inject</code> 来接收父组件提供的数据。
+`provide` 和 `inject` 很好的解决了这种问题，`provide` 可以直接由父组件提供数据，其后代组件都可以用 `inject` 来接收父组件提供的数据。
 ![provideInject](/images/provide-inject.png)
 
 
