@@ -57,6 +57,8 @@ export const sidebar = {
         { text: '🟥CSS浮动', link: '/CSS/float浮动' },
         { text: '🟥CSS-flex布局', link: '/CSS/flex布局' },
         { text: '🟥CSS-transform', link: '/CSS/CSS-transform形变' },
+        { text: '🟥CSS-动画', link: '/CSS/CSS-动画' },
+        { text: '🟥CSS-vertical-align', link: '/CSS/CSS-vertical-align' },
       ]
     },
     {
