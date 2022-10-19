@@ -58,7 +58,7 @@ border: width style(不能省略) color
 * 解决方法
   * 在父子元素之间不设置margin-top/bottom,用padding代替
   * 给父元素设置border
-  * 触发BFC：给父元素设置overflow: auto
+  * 触发BFC：给父元素设置overflow: auto 
 ```
 ### margin的折叠
 什么是margin的折叠❓

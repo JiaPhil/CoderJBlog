@@ -65,9 +65,21 @@ export const sidebar = {
       text: '🟥CSS补充',
       link: '/CSS/CSS补充知识',
       items: [
-        { text: '🟥CSS补充知识', link: '/CSS/CSS补充知识' }
+        { text: '🟥CSS补充知识—box', link: '/CSS/CSS补充知识-1' },
+        { text: '🟥CSS补充知识-HTML5', link: '/CSS/CSS补充知识-2' },
+        { text: '🟥CSS补充知识-CSS单位/像素', link: '/CSS/CSS补充知识-3' },
+        { text: '🟥CSS补充知识-移动端视口', link: '/CSS/CSS补充知识-4' },
+        { text: '🟥CSS补充知识-移动端适配', link: '/CSS/CSS补充知识-5' },
       ]
-    }
+    },
+    {
+      text: '🟥CSS预处理器',
+      link: '/CSS/Less',
+      items: [
+        { text: '🟥CSS补充知识—Less预处理器', link: '/CSS/Less' }
+        
+      ]
+    },
   ],
   '/JavaScript/': [
     {
