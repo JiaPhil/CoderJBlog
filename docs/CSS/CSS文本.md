@@ -37,6 +37,7 @@ letter-spacing、word-spacing分别用于设置字母、单词之间的间距
 
 
 ## 单行省略
+需要width 才生效
 ```css
 .text{
   white-space: nowrap;

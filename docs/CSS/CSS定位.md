@@ -80,6 +80,8 @@
 /* 水平居中显示 */
 .box {
   position: absolute;
+  width: 100px;
+  height: 100px;
   left:0;
   right:0;
   margin:0 auto;
@@ -95,7 +97,7 @@
 * 2. top/bottom/margin-top/margin-bottom 为0时 绝对定位元素占据定位参照元素的整个高度
 * 3. top/bottom 为0 margin-top/margin-bottom设置为auto时 绝对元素垂直居中显示
 */
-/* 占据整个宽度 */
+/* 占据整个高度 */
 .box {
   position: absolute;
   top:0;
@@ -103,9 +105,11 @@
   margin-top:0;
   margin-bottom:0;
 }
-/* 水平居中显示 */
+/* 垂直居中显示 */
 .box {
   position: absolute;
+  width: 100px;
+  height: 100px;
   top:0;
   bottom:0;
   margin:auto 0;
@@ -117,6 +121,8 @@
 /* 水平垂直居中 */
 .box {
   position: absolute;
+  width: 100px;
+  height: 100px;
   top:0;
   bottom:0;
   left:0;

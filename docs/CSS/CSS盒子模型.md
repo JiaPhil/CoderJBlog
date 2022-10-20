@@ -69,7 +69,8 @@ border: width style(不能省略) color
 ```
 ✨解决办法
 ```tex
-只设置一个margin
+1. 只设置一个margin
+2. 触发BFC: 两个盒子在不同的BFC中可以避免margin折叠的问题
 ```
 
 ## padding和margin元素的对比
