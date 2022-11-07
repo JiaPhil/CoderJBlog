@@ -4,12 +4,15 @@
 * 可继承
 * 常用设置
   * 具体数据+单位
+
   √ 比如100px
+  
   √ 也可以使用em单位(不推荐)：1em代表100%，2em代表200%，0.5em代表50%
     font-size是可以继承父元素的font-size
     em -> 相对于父元素的字体的尺寸
 
   * 百分比
+  
   √ 基于父元素的font-size计算，比如50%表示等于父元素font-size的一半
 
 ## font-famliy(重要)
@@ -38,10 +41,10 @@ font-variant可以影响小写字母的显示形式
 ## line-height(重要)
 √ 只作用于文本
 
-√ 对于块级元素，它指定元素**行盒（line boxes）**的最小高度。
+√ 对于块级元素，它指定元素**行盒line box**的最小高度。
 
 √ 对于非替代的 inline 元素，它用于计算行盒（line box）的高度
-line-height上下居中显示原理
+line-height相对于父元素上下居中显示原理
 ```tex
 line-height = 字体大小(font-size) + 上行距 + 下行距 (上行距 = 下行距)
 ```

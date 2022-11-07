@@ -9,6 +9,19 @@
 -n+2 代表前/后两个元素
 ```
 
+示例：
+```less
+.box {
+  &>p:nth-child(1) {
+    color: red;
+  }
+  &>p:nth-last-child(1) {
+    color: red;
+  }
+}
+
+```
+
 ## nth-of-type() 和 nth-last-of-type()
 * nth-of-type 代表从第一个元素开始
 * nth-last-of-type 代表从最后一个元素开始
@@ -16,7 +29,34 @@
 ## nth-child() 和 nth-of-type()的区别
 ```tex
 1. nth-of-type 计数时只计算同种类的元素
-2. nth-child 计数时不计算同种类的元素
+2. nth-child 计数时不区分是否是同种种类的元素
+```
+
+示例：
+```less
+.box {
+  width: 175px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  
+  p:nth-of-type(2n + 1) {
+    color: red;
+  }
+
+  p:nth-of-type(2n) {
+    color: blue;
+  }
+}
+// <div class="box">
+//   <div>这段不参与计数。</div>
+//   <p>这是第一段。</p> red
+//   <p>这是第二段。</p> blue
+//   <div>这段不参与计数。</div>
+//   <p>这是第三段。</p> red
+//   <p>这是第四段。</p> blue
+// </div>
 ```
 
 ## 其他伪类

@@ -6,6 +6,7 @@ node_modules
 
 # Dependencies
 /node_modules
+/html
 
 # # Generated files
 # .docusaurus
