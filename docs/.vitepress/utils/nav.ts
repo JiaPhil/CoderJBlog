@@ -16,7 +16,8 @@ export const nav = [
       { text: '🔥Git', link: '' },
       { text: "🕎Npm", link: "" },
       { text: "🏗️Webpack", link: "" },
-      { text: "✌️Vite", link: "" }
+      { text: "⚒️Gulp", link: "" },
+      { text: "✌️Vite", link: "../../gulp/认识Gulp.md" }
     ]
   },
   {

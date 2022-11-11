@@ -23,7 +23,7 @@ features:
     details: 🟧HTML 🟥CSS 🟨JS 🟩Vue 🟦TS 
   - icon: 📖
     title: 📖 Web进阶
-    details: 🔥 Git 🕎 Npm 🏗️ Webpack ✌️ Vite
+    details: 🔥 Git 🕎 Npm 🏗️ Webpack ✌️ Vite ....
   - icon: 🖥️
     title: 🖥️ 后端-BackEnd
     details: ⬜Node + ⬛Express + 🐬MySQL
