@@ -15,6 +15,13 @@ HTML5新增语义化元素包括：
 > HTML5 新增语义化元素，没有特殊的含义，上述元素都是 `block-level`，只是将元素语义化
 > 更利于浏览器解析，并且利于 `SEO` 优化
 
+```text
+SEO 优化
+1. 元素语义化
+2. meta -> keyWords 关键字
+3. title -> 关键字
+```
+
 ### HTML5新增 - video/audio
 
 HTML5新增视频播放元素，摒弃 `flash` 的视频播放方式，解决了视频中无法支持的 `HTML/CSS` 特性和 `兼容性问题`

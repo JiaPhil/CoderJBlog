@@ -122,6 +122,8 @@ window.addEventListener('pageshow', funtion (e) {
 ## vw适配
 vw是相对于视口的，1vw = 1/100视口的宽度，这是固定的，我们在用vw适配时只需要将px单位转换成vw即可；
 
+1rem = 10vw
+
 ### 方案一：手动换算
 ```tex
 例如在375px的设备上，1vw = 3.75px,设置一个100px的盒子，换算过来就是 100 / 3.75 = 26.6667vw

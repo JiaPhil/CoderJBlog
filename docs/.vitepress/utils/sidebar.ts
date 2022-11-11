@@ -83,6 +83,23 @@ export const sidebar = {
   ],
   '/JavaScript/': [
     {
+      text: '🟨JS基础',
+      collapsible: true,
+      // link:'/docs/docs/JavaScript/JavaScript递归.md',
+      items: [
+        {
+          text: '🟨JS数据类型',
+          link: '/JavaScript/JS基础/js类型'
+        },
+        {
+          text: '🟨函数（Function）',
+          link: '/JavaScript/JS基础/函数'
+        },
+        
+
+      ]
+    },
+    {
       text: '🟨JavaScript',
       collapsible: true,
       // link:'/docs/docs/JavaScript/JavaScript递归.md',
