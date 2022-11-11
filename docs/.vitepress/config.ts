@@ -8,8 +8,8 @@ const config = defineConfig({
   lang: 'zh-CN',
   title: 'CoderJ',
   titleTemplate: 'CoderJ',
-  base: '/',
-  // base: '/CoderJBlog/',
+  // base: '/',
+  base: '/CoderJBlog/',
   outDir: '../dist',
   head: [
     ['link', { rel: 'icon', href: '/images/iconfont.png', crossorigin: '' }]
